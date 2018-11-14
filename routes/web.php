@@ -10,6 +10,11 @@
 |
 */
 Route::get('/', function () {
+    \App\Post::create([
+        'title'=>'test title',
+        'content'=>'test content',
+    ]);
+
 //    \App\Post::create([
 //        'title'=>'test title',
 //        'content'=>'test content'
