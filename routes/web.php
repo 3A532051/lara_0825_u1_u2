@@ -15,10 +15,13 @@ Route::get('/', function () {
     //    'content'=>'test content',
     //]);
 
-    $post = new \App\Post();
-    $post -> title = 'test title';
-    $post -> content = 'test content';
-    $post -> save();
+    //$post = new \App\Post();
+    //$post -> title = 'minmin257';
+    //$post -> content = 'I finally compelete';
+    //$post -> save();
+
+    $postS = \App\Post::where('id','<',10)->orderBy('id','DESC')->get();
+    dd($postS);
 
 //    $post = new \App\Post();
 //    $post->title = 'test title2';
@@ -30,8 +33,8 @@ Route::get('/', function () {
 //        'content' => 'updated content',
 //    ]);
 //
-//    $posts = \App\Post::all();
-//    dd($posts);
+
+//
 //    $post = \App\Post::find(1);
 //    foreach($post->comments as $comment) {
 //        echo $comment->title.'<br>';
