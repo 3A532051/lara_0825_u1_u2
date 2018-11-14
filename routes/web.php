@@ -20,8 +20,21 @@ Route::get('/', function () {
     //$post -> content = 'I finally compelete';
     //$post -> save();
 
-    $postS = \App\Post::where('id','<',10)->orderBy('id','DESC')->get();
-    dd($postS);
+    //$postS = \App\Post::where('id','<',10)->orderBy('id','DESC')->get();
+    //dd($postS);
+
+    //$post=\App\Post::find(1);
+    //$post -> update([
+    //    'title'=>'updated title',
+    //    'content'=>'updated content',
+    //]);
+
+    $post=\App\Post::find(1);
+    $post ->title='saved title';
+    $post ->content='saved content';
+    $post ->save();
+
+
 
 //    $post = new \App\Post();
 //    $post->title = 'test title2';
