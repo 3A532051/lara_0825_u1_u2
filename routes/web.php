@@ -29,25 +29,18 @@ Route::get('/', function () {
     //    'content'=>'updated content',
     //]);
 
-    $post=\App\Post::find(1);
-    $post ->title='saved title';
-    $post ->content='saved content';
-    $post ->save();
+    //$post=\App\Post::find(1);
+    //$post ->title='saved title';
+    //$post ->content='saved content';
+    //$post ->save();
 
+    //$post=\App\Post::find(1);
+    //$post -> delete();
 
+    //\App\Post::destroy(2);
 
-//    $post = new \App\Post();
-//    $post->title = 'test title2';
-//    $post->content = 'test content2';
-//    $post->save();
-//    $post = \App\Post::find(1);
-//    $post->update([
-//        'title' => 'updated title',
-//        'content' => 'updated content',
-//    ]);
-//
+    \App\Post::destroy(3,5,7);
 
-//
 //    $post = \App\Post::find(1);
 //    foreach($post->comments as $comment) {
 //        echo $comment->title.'<br>';
